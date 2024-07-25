@@ -1,7 +1,19 @@
 import React from "react"
+import "./header.scss"
+import logo from "../assets/logo.png"
 
 function Header() {
-  return <div>Headerfffffffffff</div>
+  return (
+    <header>
+      <div className="headercontainer">
+        <img src={logo} />
+        <nav className="navbar">
+          <a>Accueil</a>
+          <a>A Propos</a>
+        </nav>
+      </div>
+    </header>
+  )
 }
 
 export default Header

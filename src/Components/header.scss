@@ -1,0 +1,18 @@
+.headercontainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+
+  .navbar {
+    display: flex;
+    gap: 57px;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
