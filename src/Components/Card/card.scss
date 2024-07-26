@@ -1,0 +1,21 @@
+.card {
+  height: 340px;
+  width: 340px;
+  position: relative;
+  border-radius: 10px;
+  h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+  img {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+  }
+}

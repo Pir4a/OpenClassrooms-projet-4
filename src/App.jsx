@@ -1,13 +1,14 @@
 import { Route, Routes } from "react-router-dom"
 import "./App.scss"
-import Header from "./Components/Header"
+import Header from "./Components/Header/Header"
+import Home from "./Pages/Home"
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="" />
+        <Route path="" element={<Home />} />
       </Routes>
     </>
   )
