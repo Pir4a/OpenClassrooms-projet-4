@@ -27,8 +27,20 @@ function Carrousel() {
 
   return (
     <div className="carrousel">
-      <img className="vector" src={vector} onClick={showPrevImage} />
-      <img className="vector-two" src={vector2} onClick={showNextImage} />
+      {currentLogement.pictures.length > 1 ? (
+        <>
+          {" "}
+          <img className="vector" src={vector} onClick={showPrevImage} />{" "}
+          <img className="vector-two" src={vector2} onClick={showNextImage} />{" "}
+          <span className="imgcount">
+            {" "}
+            {imageIndex + 1}/{currentLogement.pictures.length}
+          </span>
+        </>
+      ) : (
+        ""
+      )}
+
       {currentLogement.pictures.map((logement) => (
         <img
           src={logement}

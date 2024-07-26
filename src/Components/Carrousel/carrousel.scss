@@ -8,6 +8,16 @@
   margin-top: 50px;
   max-height: 415px;
 
+  .imgcount {
+    z-index: 2;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 25px;
+    left: 48.5%;
+    color: white;
+  }
+
   .vector {
     padding: 5px;
     position: absolute;

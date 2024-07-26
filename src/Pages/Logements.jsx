@@ -10,6 +10,8 @@ function Logements() {
   let { id } = useParams()
   let currentLogement = data.find((data) => data.id === id)
 
+  let splitName = currentLogement.host.name.split(" ")
+
   let grayStars = 5 - currentLogement.rating
 
   const starDivs = Array.from(
@@ -36,7 +38,8 @@ function Logements() {
         </div>
         <div className="right-container">
           <h4>
-            {currentLogement.host.name}
+            {splitName[0]} <br />
+            {splitName[1]}
             <img src={currentLogement.host.picture} />
           </h4>
           <div className="stars">
