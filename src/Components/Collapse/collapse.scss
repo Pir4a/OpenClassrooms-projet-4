@@ -1,0 +1,45 @@
+.collapse {
+  margin-top: 30px;
+  width: 582px;
+  font-family: "Montserrat";
+
+  .hidden {
+    max-height: 0px;
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    height: 52px;
+
+    border-radius: 10px;
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  ul {
+    padding: 16px 20px 20px 20px;
+    background-color: #f6f6f6;
+
+    list-style-type: none;
+    font-size: 18px;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .collapse-list {
+      transition: all;
+      transition-duration: 200ms;
+      min-height: 130px;
+    }
+  }
+}

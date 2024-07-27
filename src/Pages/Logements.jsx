@@ -6,6 +6,7 @@ import "./logements.scss"
 import Tag from "../Components/Tags/Tag"
 import star from "../assets/star.png"
 import graystar from "../assets/graystar.png"
+import Collapse from "../Components/Collapse/Collapse"
 function Logements() {
   let { id } = useParams()
   let currentLogement = data.find((data) => data.id === id)
@@ -16,11 +17,11 @@ function Logements() {
 
   const starDivs = Array.from(
     { length: currentLogement.rating },
-    (_, index) => <img src={star} key={index} />
+    (_, index) => <img src={star} key={index} alt="star" />
   )
 
   const grayStarDivs = Array.from({ length: grayStars }, (_, index) => (
-    <img src={graystar} key={index + 4} />
+    <img src={graystar} key={index + 4} alt="grey star" />
   ))
 
   return (
@@ -40,12 +41,27 @@ function Logements() {
           <h4>
             {splitName[0]} <br />
             {splitName[1]}
-            <img src={currentLogement.host.picture} />
+            <img
+              src={currentLogement.host.picture}
+              alt={currentLogement.title}
+            />
           </h4>
           <div className="stars">
             {starDivs} {grayStarDivs}
           </div>
         </div>
+      </div>
+      <div className="collapses-container">
+        <Collapse
+          collapseName="Description"
+          collapseContent={<li>{currentLogement.description}</li>}
+        />
+        <Collapse
+          collapseName="Equipements"
+          collapseContent={currentLogement.equipments.map((equipment) => (
+            <li key={equipment}>{equipment}</li>
+          ))}
+        />
       </div>
     </div>
   )

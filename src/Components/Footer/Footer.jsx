@@ -5,7 +5,7 @@ import "./footer.scss"
 function Footer() {
   return (
     <footer>
-      <img src={blacklogo} />
+      <img src={blacklogo} alt="logo noir" />
       <p>@ 2020 Kasa, All rights reserved</p>
     </footer>
   )
