@@ -1,0 +1,16 @@
+.about-container {
+  padding-inline: 100px;
+  padding-top: 38px;
+
+  .collapse {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .bigimg {
+    border-radius: 25px;
+    filter: brightness(70%);
+    height: 223px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -9,11 +9,8 @@ function Header() {
       <div className="headercontainer">
         <img src={logo} alt="Kasa, location d'appartement logo" />
         <nav className="navbar">
-          <a>
-            <Link to="/">Accueil</Link>
-          </a>
-
-          <a>A Propos</a>
+          <Link to="/">Accueil</Link>
+          <Link to="/about">A Propos</Link>
         </nav>
       </div>
     </header>
