@@ -1,0 +1,28 @@
+.notfound {
+  padding-top: 80px;
+  padding-bottom: 139px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+
+  h1 {
+    color: #ff6060;
+    font-weight: bold;
+    font-size: 288px;
+  }
+  p {
+    font-weight: 500;
+    color: #ff6060;
+    font-size: 36px;
+  }
+  .accueil {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .accueil:visited {
+    color: black;
+  }
+}

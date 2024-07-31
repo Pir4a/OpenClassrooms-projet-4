@@ -16,11 +16,15 @@ header {
     display: flex;
     gap: 57px;
 
+    a {
+      text-decoration: none;
+    }
     a:hover {
       text-decoration: underline;
       cursor: pointer;
     }
     a:visited {
+      text-decoration: none;
       color: black;
     }
   }
