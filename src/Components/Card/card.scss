@@ -21,3 +21,16 @@
     object-fit: cover;
   }
 }
+
+@media (width<1025px) {
+  .card {
+    height: 255px;
+    width: 100%;
+    max-width: 335px;
+    img {
+      width: 100%;
+      max-width: 335px;
+      height: 255px;
+    }
+  }
+}

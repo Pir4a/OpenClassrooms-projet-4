@@ -23,3 +23,19 @@
     text-shadow: 1px 1px 5px black;
   }
 }
+@media (width<1025px) {
+  .banner {
+    margin-top: 27px;
+    margin-inline: 20px;
+    padding: 0;
+    height: 111px;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: none;
+    h1 {
+      max-width: 14ch;
+      margin-left: 18px;
+      font-size: 24px;
+    }
+  }
+}

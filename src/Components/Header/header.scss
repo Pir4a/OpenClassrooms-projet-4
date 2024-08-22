@@ -29,3 +29,22 @@ header {
     }
   }
 }
+@media (width<1025px) {
+  header {
+    margin-inline: none;
+
+    img {
+      width: 125px;
+      height: 45px;
+    }
+  }
+  .headercontainer {
+    padding-inline: 20px;
+    padding-top: 20px;
+    .navbar {
+      font-size: 12px;
+      text-transform: uppercase;
+      gap: 26px;
+    }
+  }
+}

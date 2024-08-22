@@ -11,3 +11,12 @@
   row-gap: 40px;
   place-items: center;
 }
+
+@media (width<1025px) {
+  .card-container {
+    padding-top: 22px;
+    grid-template-columns: 1fr;
+    background-color: white;
+    margin: 0;
+  }
+}
