@@ -58,3 +58,24 @@
     justify-content: space-between;
   }
 }
+@media (width<1025px) {
+  .logement-container {
+    padding-inline: 20px;
+    margin-top: 0;
+    .descriptions {
+      flex-direction: column;
+      .right-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        img {
+          margin-left: 2px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+    .collapses-container {
+      flex-direction: column;
+    }
+  }
+}

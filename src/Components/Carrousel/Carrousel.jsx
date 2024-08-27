@@ -43,6 +43,7 @@ function Carrousel() {
 
       {currentLogement.pictures.map((logement) => (
         <img
+          id="logementimg"
           src={logement}
           key={logement}
           style={{ translate: `${-100 * imageIndex}%` }}
