@@ -26,3 +26,27 @@
     color: black;
   }
 }
+@media (width<1025px) {
+  .notfound {
+    padding-top: 113px;
+    padding-bottom: 113px;
+
+    gap: 113px;
+
+    h1 {
+      font-size: 96px;
+    }
+    p {
+      padding-inline: 57.5px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .accueil {
+      font-weight: 500;
+      font-size: 18px;
+    }
+    .accueil:visited {
+      color: black;
+    }
+  }
+}

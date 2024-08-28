@@ -1,5 +1,5 @@
 footer {
-  position: static;
+  position: statica;
   left: 0;
   bottom: 0;
   right: 0;
@@ -19,5 +19,14 @@ footer {
     line-height: 142%;
     font-weight: 500;
     padding-top: 29px;
+    text-align: center;
+  }
+}
+@media (width<1025px) {
+  footer {
+    p {
+      padding-top: 10px;
+      font-size: 12px;
+    }
   }
 }

@@ -64,7 +64,29 @@
     margin-top: 0;
     .descriptions {
       flex-direction: column;
+      .left-container {
+        p {
+          padding-top: 5px;
+          font-size: 14px;
+
+          font-weight: 600;
+        }
+        h3 {
+          padding-top: 15px;
+          color: #ff6060;
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .tags {
+          padding-top: 20px;
+          font-size: 10px;
+          font-weight: bold;
+          display: flex;
+          gap: 10px;
+        }
+      }
       .right-container {
+        padding-top: 10px;
         flex-direction: row-reverse;
         justify-content: space-between;
         img {
@@ -72,10 +94,14 @@
           width: 18px;
           height: 18px;
         }
+        .stars {
+          margin-top: 8px;
+        }
       }
     }
     .collapses-container {
       flex-direction: column;
+      margin-top: -15px;
     }
   }
 }

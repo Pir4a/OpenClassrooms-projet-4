@@ -10,3 +10,18 @@
   min-height: 25px;
   background-color: #ff6060;
 }
+
+@media (width<1025px) {
+  .tag {
+    padding-inline: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 84px;
+    min-height: 18px;
+    background-color: #ff6060;
+  }
+}
