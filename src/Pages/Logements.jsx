@@ -17,9 +17,6 @@ function Logements() {
   let navigate = useNavigate()
 
   useEffect(() => {
-    console.log("---->egko")
-    console.log("---->egko")
-    console.log("---->egko")
     if (currentLogement == undefined) {
       navigate("/404")
     }
