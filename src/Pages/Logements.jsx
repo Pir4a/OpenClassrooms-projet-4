@@ -13,7 +13,7 @@ import { useEffect } from "react"
 function Logements() {
   let { id } = useParams()
   let currentLogement = data.find((data) => data.id === id)
-  console.log(currentLogement)
+
   let navigate = useNavigate()
 
   useEffect(() => {
