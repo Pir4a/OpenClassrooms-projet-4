@@ -13,7 +13,11 @@ function Collapse({ collapseName, collapseContent }) {
         {isCollapsed ? (
           <img alt="fleche vers le haut" src={flechehaut} className="fleche" />
         ) : (
-          <img alt="fleche vers le bas" src={flechebas} className="fleche" />
+          <img
+            alt="fleche vers le bas"
+            src={flechehaut}
+            className="fleche bas"
+          />
         )}
       </h3>
       <ul className={isCollapsed ? "collapse-list" : "hidden"}>

@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import data from "../../logements.json"
 import Carrousel from "../Components/Carrousel/Carrousel"
 import "./logements.scss"
@@ -7,9 +7,25 @@ import Tag from "../Components/Tags/Tag"
 import star from "../assets/star.png"
 import graystar from "../assets/graystar.png"
 import Collapse from "../Components/Collapse/Collapse"
+import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
+
 function Logements() {
   let { id } = useParams()
   let currentLogement = data.find((data) => data.id === id)
+  console.log(currentLogement)
+  let navigate = useNavigate()
+
+  useEffect(() => {
+    console.log("---->egko")
+    console.log("---->egko")
+    console.log("---->egko")
+    if (currentLogement == undefined) {
+      navigate("/404")
+    }
+  }, [])
+
+  if (currentLogement == undefined) return
 
   let splitName = currentLogement.host.name.split(" ")
 

@@ -23,6 +23,12 @@
     border-radius: 10px;
     img {
       margin-right: 10px;
+      transition: all;
+      transition-duration: 400ms;
+    }
+
+    .bas {
+      rotate: -180deg;
     }
   }
 
@@ -33,14 +39,14 @@
     list-style-type: none;
     font-size: 18px;
     transition: all;
-    transition-duration: 300ms;
+    transition-duration: 400ms;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 
     .collapse-list {
       transform: translateY(-0%);
       transition: all;
-      transition-duration: 200ms;
+      transition-duration: 400ms;
       min-height: 130px;
     }
   }
